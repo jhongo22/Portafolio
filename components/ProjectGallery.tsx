@@ -64,26 +64,27 @@ export default function ProjectGallery() {
 
     return (
         <section id="proyectos" className="w-full py-24 relative z-10">
-            <GlobalScrollbarStyles />
             <div className="container mx-auto px-4 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
                 <SectionHeader
                     title="Proyectos"
-                    description="Una selección de mis últimos trabajos, desde aplicaciones web completas hasta automatizaciones avanzadas."
+                    description="Una selección de mis últimos desarrollos, desde aplicaciones web completas hasta automatizaciones avanzadas con inteligencia artificial."
                 />
 
                 {/* View Toggle - Desktop Only, Centered */}
                 <div className="hidden lg:flex justify-center mb-16">
-                    <div className="flex items-center bg-white/5 backdrop-blur-md border border-white/10 p-1 rounded-xl">
+                    <div className="flex items-center bg-white/5 backdrop-blur-md border border-white/10 p-1.5 rounded-2xl shadow-xl">
                         <button
                             onClick={() => setViewMode("list")}
-                            className={`flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all ${viewMode === "list" ? "bg-red-500 text-white shadow-[0_0_20px_rgba(239,68,68,0.4)]" : "text-zinc-500 hover:text-zinc-300"}`}
+                            aria-label="Vista en filas"
+                            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl transition-all cursor-pointer min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 ${viewMode === "list" ? "bg-red-500 text-white shadow-[0_0_20px_rgba(239,68,68,0.4)]" : "text-zinc-400 hover:text-white"}`}
                         >
                             <List className="w-4 h-4" />
                             <span className="text-[10px] font-black uppercase tracking-[0.2em]">Filas</span>
                         </button>
                         <button
                             onClick={() => setViewMode("grid")}
-                            className={`flex items-center gap-2 px-5 py-2.5 rounded-lg transition-all ${viewMode === "grid" ? "bg-red-500 text-white shadow-[0_0_20px_rgba(239,68,68,0.4)]" : "text-zinc-500 hover:text-zinc-300"}`}
+                            aria-label="Vista en cuadrícula"
+                            className={`flex items-center gap-2 px-5 py-2.5 rounded-xl transition-all cursor-pointer min-h-[44px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 ${viewMode === "grid" ? "bg-red-500 text-white shadow-[0_0_20px_rgba(239,68,68,0.4)]" : "text-zinc-400 hover:text-white"}`}
                         >
                             <LayoutGrid className="w-4 h-4" />
                             <span className="text-[10px] font-black uppercase tracking-[0.2em]">Cuadrícula</span>
@@ -112,13 +113,17 @@ export default function ProjectGallery() {
                             setActiveImageIndex(0);
                         }}
                         className="fixed inset-0 z-[99999] flex items-center justify-center bg-black/95 backdrop-blur-xl p-4 cursor-zoom-out"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label={`Galería de ${selectedProject.title}`}
                     >
                         {/* Close Button */}
                         <motion.button
                             initial={{ scale: 0.5, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
                             exit={{ scale: 0.5, opacity: 0 }}
-                            className="absolute top-6 right-6 md:top-10 md:right-10 p-4 rounded-full bg-white/10 text-white hover:bg-red-600 transition-all border border-white/10 z-[100005] cursor-pointer shadow-2xl backdrop-blur-xl group"
+                            aria-label="Cerrar modal de imágenes"
+                            className="absolute top-6 right-6 md:top-10 md:right-10 p-4 rounded-full bg-white/10 text-white hover:bg-red-600 transition-all border border-white/10 z-[100005] cursor-pointer shadow-2xl backdrop-blur-xl group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                             onClick={(e) => {
                                 e.stopPropagation();
                                 setSelectedProject(null);
@@ -133,13 +138,15 @@ export default function ProjectGallery() {
                             <>
                                 <button
                                     onClick={handlePrev}
-                                    className="absolute left-4 md:left-10 p-4 rounded-full bg-black/40 text-white hover:bg-red-600 transition-all border border-white/10 z-[100001] cursor-pointer active:scale-90 backdrop-blur-md"
+                                    aria-label="Imagen anterior"
+                                    className="absolute left-4 md:left-10 p-4 rounded-full bg-black/40 text-white hover:bg-red-600 transition-all border border-white/10 z-[100001] cursor-pointer active:scale-90 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                                 >
                                     <ChevronLeft className="w-8 h-8" />
                                 </button>
                                 <button
                                     onClick={handleNext}
-                                    className="absolute right-4 md:right-10 p-4 rounded-full bg-black/40 text-white hover:bg-red-600 transition-all border border-white/10 z-[100001] cursor-pointer active:scale-90 backdrop-blur-md"
+                                    aria-label="Siguiente imagen"
+                                    className="absolute right-4 md:right-10 p-4 rounded-full bg-black/40 text-white hover:bg-red-600 transition-all border border-white/10 z-[100001] cursor-pointer active:scale-90 backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                                 >
                                     <ChevronRight className="w-8 h-8" />
                                 </button>
@@ -150,7 +157,8 @@ export default function ProjectGallery() {
                                         <button
                                             key={idx}
                                             onClick={() => setActiveImageIndex(idx)}
-                                            className={`h-1.5 rounded-full transition-all cursor-pointer ${idx === activeImageIndex ? 'bg-red-600 w-8' : 'bg-white/20 w-4 hover:bg-white/40'}`}
+                                            aria-label={`Ver diapositiva ${idx + 1}`}
+                                            className={`h-2 rounded-full transition-all cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 ${idx === activeImageIndex ? 'bg-red-500 w-8 shadow-[0_0_10px_rgba(239,68,68,0.5)]' : 'bg-white/20 w-4 hover:bg-white/40'}`}
                                         />
                                     ))}
                                 </div>
@@ -160,7 +168,7 @@ export default function ProjectGallery() {
                         <div className="relative w-full max-w-6xl h-[80vh] z-[100000]" onClick={(e) => e.stopPropagation()}>
                             <Image
                                 src={selectedProject.images[activeImageIndex]}
-                                alt={`Project view ${activeImageIndex + 1}`}
+                                alt={`Vista ${activeImageIndex + 1} de ${selectedProject.title}`}
                                 fill
                                 className="object-contain"
                                 sizes="90vw"
@@ -174,29 +182,3 @@ export default function ProjectGallery() {
         </section>
     );
 }
-
-// --- STYLES ---
-const GlobalScrollbarStyles = () => (
-    <style jsx global>{`
-        .custom-red-scrollbar::-webkit-scrollbar {
-            width: 6px;
-        }
-        .custom-red-scrollbar::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-        }
-        .custom-red-scrollbar::-webkit-scrollbar-thumb {
-            background: #ef4444 !important;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
-        }
-        .custom-red-scrollbar::-webkit-scrollbar-thumb:hover {
-            background: #ff5555 !important;
-        }
-        /* For Firefox */
-        .custom-red-scrollbar {
-            scrollbar-width: thin;
-            scrollbar-color: #ef4444 rgba(255, 255, 255, 0.05);
-        }
-    `}</style>
-);

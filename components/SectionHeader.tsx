@@ -16,7 +16,7 @@ export default function SectionHeader({ title, description, subtitle }: SectionH
                     initial={{ opacity: 0, y: 10 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-zinc-400"
+                    className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-bold uppercase tracking-widest text-zinc-300"
                 >
                     {subtitle}
                 </motion.span>
@@ -48,7 +48,7 @@ export default function SectionHeader({ title, description, subtitle }: SectionH
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 }}
-                    className="text-zinc-400 max-w-2xl text-lg leading-snug pt-4"
+                    className="text-zinc-300 max-w-2xl text-base md:text-lg leading-relaxed pt-2"
                 >
                     {description}
                 </motion.p>

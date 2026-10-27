@@ -47,14 +47,14 @@ const MegaMenu = React.forwardRef<HTMLUListElement, MegaMenuProps>(
                     >
                         <a
                             href={navItem.link || "#"}
-                            className="relative flex cursor-pointer items-center justify-center gap-1 py-2.5 px-6 text-sm font-bold text-white/50 transition-colors duration-300 hover:text-white group uppercase tracking-tighter"
+                            className="relative flex cursor-pointer items-center justify-center gap-1 py-2.5 px-6 text-sm font-bold text-zinc-300 transition-colors duration-300 hover:text-white group uppercase tracking-tighter focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 rounded-full"
                             onMouseEnter={() => setIsHover(navItem.id)}
                             onMouseLeave={() => setIsHover(null)}
                         >
-                            <span>{navItem.label}</span>
+                            <span className="relative z-10">{navItem.label}</span>
                             {navItem.subMenus && (
                                 <ChevronDown
-                                    className={`h-4 w-4 transition-transform duration-300 group-hover:rotate-180 ${openMenu === navItem.label ? "rotate-180" : ""
+                                    className={`h-4 w-4 transition-transform duration-300 group-hover:rotate-180 relative z-10 ${openMenu === navItem.label ? "rotate-180" : ""
                                         }`}
                                 />
                             )}
@@ -92,7 +92,7 @@ const MegaMenu = React.forwardRef<HTMLUListElement, MegaMenuProps>(
                                                                 <li key={item.label}>
                                                                     <a
                                                                         href="#"
-                                                                        className="flex items-start space-x-3 group"
+                                                                        className="flex items-start space-x-3 group rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 p-1"
                                                                     >
                                                                         <div className="flex size-9 shrink-0 items-center justify-center rounded-md border border-white/30 text-white transition-colors duration-300 group-hover:bg-white group-hover:text-[#0A0A0A]">
                                                                             <Icon className="h-5 w-5 flex-none" />
@@ -101,7 +101,7 @@ const MegaMenu = React.forwardRef<HTMLUListElement, MegaMenuProps>(
                                                                             <p className="shrink-0 text-sm font-medium text-white">
                                                                                 {item.label}
                                                                             </p>
-                                                                            <p className="shrink-0 text-xs text-white/50 transition-colors duration-300 group-hover:text-white">
+                                                                            <p className="shrink-0 text-xs text-zinc-400 transition-colors duration-300 group-hover:text-white">
                                                                                 {item.description}
                                                                             </p>
                                                                         </div>

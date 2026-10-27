@@ -51,16 +51,16 @@ export default function ServiceCard({ title, description, iconName, color, lotti
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
-            className="group p-8 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col items-start gap-4 relative overflow-hidden h-full min-h-[280px]"
+            transition={{ delay: index * 0.1, duration: 0.4 }}
+            className="group p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col items-start gap-4 relative overflow-hidden h-full min-h-[280px] shadow-xl"
         >
-            <div className={`p-3 rounded-xl bg-white/5 border border-white/5 group-hover:scale-110 transition-transform duration-300 ${color} relative z-10`}>
+            <div className={`p-3 rounded-xl bg-black/40 border border-white/10 group-hover:scale-110 transition-transform duration-300 ${color} relative z-10`}>
                 <Icon className="w-6 h-6" />
             </div>
 
             <div className="relative z-10 flex flex-col gap-2 w-full pr-12">
-                <h3 className="text-xl font-bold uppercase tracking-tighter text-white mt-2">{title}</h3>
-                <p className="text-zinc-400 leading-relaxed text-sm lg:text-base">
+                <h3 className="text-xl font-black uppercase tracking-tighter text-white mt-2 group-hover:text-red-400 transition-colors">{title}</h3>
+                <p className="text-zinc-300 leading-relaxed text-sm lg:text-base">
                     {description}
                 </p>
             </div>
@@ -75,7 +75,7 @@ export default function ServiceCard({ title, description, iconName, color, lotti
                 </div>
             )}
 
-            {/* Subtle Gradient to prevent text clash if needed */}
+            {/* Subtle Gradient to prevent text clash */}
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 pointer-events-none" />
         </motion.div>
     );

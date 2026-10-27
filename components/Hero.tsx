@@ -23,7 +23,6 @@ const TypewriterBlock = () => {
 
     const fullText = tokens.map(t => t.text).join("");
 
-    // Start immediate as the card has no entry animation now
     React.useEffect(() => {
         setHasStarted(true);
     }, []);
@@ -45,7 +44,7 @@ const TypewriterBlock = () => {
         } else if (isDeleting && textIndex === 0) {
             timer = setTimeout(() => setIsDeleting(false), 1000);
         } else {
-            const speed = isDeleting ? 20 : 35; // Snappier speed
+            const speed = isDeleting ? 20 : 35;
             timer = setTimeout(handleTyping, speed);
         }
         return () => clearTimeout(timer);
@@ -90,14 +89,14 @@ const VisualMockup = () => (
         <div
             className="relative z-10 w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col pt-4 px-6 pb-20 gap-6"
         >
-            {/* Background Glow - Moved Inside to sync with animation */}
-            <div className="absolute inset-0 bg-red-500/10 blur-[120px] rounded-full -z-10" />
+            {/* Background Glow */}
+            <div className="absolute inset-0 bg-red-500/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
 
             {/* Window Controls */}
             <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-white/20" />
-                <div className="w-3 h-3 rounded-full bg-white/20" />
-                <div className="w-3 h-3 rounded-full bg-white/20" />
+                <div className="w-3 h-3 rounded-full bg-red-500/40" />
+                <div className="w-3 h-3 rounded-full bg-yellow-500/40" />
+                <div className="w-3 h-3 rounded-full bg-emerald-500/40" />
             </div>
 
             {/* Code Content Simulation */}
@@ -110,19 +109,19 @@ const VisualMockup = () => (
                 </div>
                 <div className="pl-6 space-y-1.5">
                     <div>
-                        <span className="text-gray-400 font-bold italic mr-2">// Apasionado por la automatización inteligente</span>
+                        <span className="text-zinc-400 font-bold italic mr-2">// Apasionado por la automatización inteligente</span>
                     </div>
                     <div>
-                        <span className="text-red-500">rol:</span>
+                        <span className="text-red-400">rol:</span>
                         <span className="text-emerald-400"> "Desarrollador web Full Stack & IA"</span>,
                     </div>
                     <div>
-                        <span className="text-red-500">especialidad:</span>
-                        <span className="text-emerald-400"> ["Desarrollo web", "Agentes de IA", "Automacion de procesos con IA"]</span>,
+                        <span className="text-red-400">especialidad:</span>
+                        <span className="text-emerald-400"> ["Desarrollo web", "Agentes de IA", "Automatización de procesos con IA"]</span>,
                     </div>
                     <div>
-                        <span className="text-red-500">enfoque:</span>
-                        <span className="text-emerald-400"> "Soluciones digitales"</span>,
+                        <span className="text-red-400">enfoque:</span>
+                        <span className="text-emerald-400"> "Soluciones digitales de alto impacto"</span>,
                     </div>
 
                     {/* Animated Typewriter Block */}
@@ -131,7 +130,7 @@ const VisualMockup = () => (
                 </div>
                 <div className="text-yellow-400">{`};`}</div>
 
-                <div className="pt-2 text-gray-500 italic">
+                <div className="pt-2 text-zinc-400 italic">
                     {`// Optimizado para escalabilidad`} <br />
                     <span className="text-sky-400">export default</span> construir(desarrollador);
                 </div>
@@ -164,7 +163,7 @@ export default function Hero() {
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-                                className="text-lg md:text-xl lg:text-base xl:text-lg 2xl:text-2xl text-gray-400 max-w-lg lg:max-w-md 2xl:max-w-2xl mx-auto lg:mx-0 leading-snug 2xl:leading-relaxed"
+                                className="text-lg md:text-xl lg:text-base xl:text-lg 2xl:text-2xl text-zinc-300 max-w-lg lg:max-w-md 2xl:max-w-2xl mx-auto lg:mx-0 leading-snug 2xl:leading-relaxed"
                             >
                                 Transformo ideas en ecosistemas digitales. Especialista en <span className="text-white font-bold">Arquitecturas Full Stack, Agentes de IA y Automatizaciones inteligentes</span> que escalan operaciones sin límites.
                             </motion.p>
@@ -177,14 +176,16 @@ export default function Hero() {
                             >
                                 <Link
                                     href="#proyectos"
-                                    className="inline-flex items-center justify-center px-10 py-4 lg:px-7 lg:py-3 xl:px-8 xl:py-3.5 2xl:px-12 2xl:py-5 bg-transparent border-2 border-white/20 text-white font-bold rounded-sm hover:bg-white hover:text-black transition-all hover:scale-105 active:scale-95 text-lg lg:text-sm xl:text-base 2xl:text-xl min-w-[220px] md:min-w-[220px] lg:min-w-[180px] xl:min-w-[200px] 2xl:min-w-[260px] tracking-tight uppercase"
+                                    className="inline-flex items-center justify-center px-10 py-4 lg:px-7 lg:py-3.5 xl:px-8 xl:py-3.5 2xl:px-12 2xl:py-5 bg-transparent border-2 border-white/20 text-white font-bold rounded-xl hover:bg-white hover:text-black transition-all hover:scale-105 active:scale-95 text-lg lg:text-sm xl:text-base 2xl:text-xl min-w-[220px] md:min-w-[220px] lg:min-w-[180px] xl:min-w-[200px] 2xl:min-w-[260px] tracking-tight uppercase cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                                 >
                                     Ver proyectos
                                 </Link>
 
                                 <Link
                                     href="https://wa.me/573004435894"
-                                    className="inline-flex items-center justify-center px-10 py-4 lg:px-7 lg:py-3 xl:px-8 xl:py-3.5 2xl:px-12 2xl:py-5 bg-white text-black font-bold rounded-sm hover:bg-gray-200 transition-all hover:scale-105 active:scale-95 text-lg lg:text-sm xl:text-base 2xl:text-xl min-w-[220px] md:min-w-[220px] lg:min-w-[180px] xl:min-w-[200px] 2xl:min-w-[260px] tracking-tight uppercase"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center px-10 py-4 lg:px-7 lg:py-3.5 xl:px-8 xl:py-3.5 2xl:px-12 2xl:py-5 bg-white text-black font-bold rounded-xl hover:bg-zinc-200 transition-all hover:scale-105 active:scale-95 text-lg lg:text-sm xl:text-base 2xl:text-xl min-w-[220px] md:min-w-[220px] lg:min-w-[180px] xl:min-w-[200px] 2xl:min-w-[260px] tracking-tight uppercase cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                                 >
                                     Hablemos
                                 </Link>

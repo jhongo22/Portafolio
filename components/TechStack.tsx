@@ -115,7 +115,10 @@ function TechStack() {
   return (
     <section id="stack" className="relative w-full py-24">
       <div className="container mx-auto px-4 md:px-8 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl">
-        <SectionHeader title="Stack Tecnológico" />
+        <SectionHeader
+          title="Stack Tecnológico"
+          description="Ecosistema de lenguajes, frameworks, bases de datos y herramientas que empleo a diario para construir software robusto."
+        />
 
         <div className="relative">
           <LogoLoop
