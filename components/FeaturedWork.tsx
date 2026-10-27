@@ -84,7 +84,7 @@ export default function FeaturedWork() {
                                     </div>
                                     <div className="text-center md:text-right">
                                         <span className="block text-zinc-500 text-[10px] mb-1 font-bold uppercase tracking-widest opacity-60">Años</span>
-                                        <span className="text-white font-black text-xl md:text-2xl">1+</span>
+                                        <span className="text-white font-black text-xl md:text-2xl">2+</span>
                                     </div>
                                     <div className="text-center md:text-right">
                                         <span className="block text-zinc-500 text-[10px] mb-1 font-bold uppercase tracking-widest opacity-60">STACK</span>
@@ -109,7 +109,7 @@ export default function FeaturedWork() {
                             {/* Bio Card */}
                             <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-5 md:p-8 flex flex-col justify-between h-full min-h-[300px] md:min-h-[350px]">
                                 <p className="text-sm md:text-lg text-zinc-400 leading-relaxed md:leading-snug">
-                                    Desarrollador de software con 1+ de experiencia. Mi enfoque combina el desarrollo <span className="text-white font-bold">Full Stack</span> con la potencia de la <span className="text-white font-bold">Inteligencia Artificial</span> para automatizar operaciones y escalar negocios.
+                                    Desarrollador de software con 2+ de experiencia. Mi enfoque combina el desarrollo <span className="text-white font-bold">Full Stack</span> con la potencia de la <span className="text-white font-bold">Inteligencia Artificial</span> para automatizar operaciones y escalar negocios.
                                 </p>
                                 <div className="flex flex-col gap-3 mt-6">
                                     <div className="flex items-center gap-2.5 text-zinc-500 text-[9px] md:text-[10px] font-black uppercase tracking-[0.2em]">
@@ -146,6 +146,19 @@ export default function FeaturedWork() {
                                         <div className="flex items-center gap-2 text-zinc-600 group-hover:text-white transition-colors">
                                             <span className="hidden md:block text-[8px] uppercase font-bold tracking-widest">Explorar</span>
                                             <Github className="w-4 h-4" />
+                                        </div>
+                                    </Link>
+                                    {/* LinkedIn */}
+                                    <Link
+                                        href="https://www.linkedin.com/in/jhon-gonzalez-3415b2263/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group flex items-center justify-between bg-black/40 hover:bg-black/60 border border-white/5 rounded-2xl px-4 py-3 md:px-5 md:py-4 transition-all"
+                                    >
+                                        <span className="text-[10px] md:text-xs font-black uppercase tracking-widest text-zinc-300">LinkedIn</span>
+                                        <div className="flex items-center gap-2 text-zinc-600 group-hover:text-[#0077b5] transition-colors">
+                                            <span className="hidden md:block text-[8px] uppercase font-bold tracking-widest">Conectar</span>
+                                            <Linkedin className="w-4 h-4" />
                                         </div>
                                     </Link>
                                     {/* Email */}

@@ -11,18 +11,20 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import ProjectGallery from "@/components/ProjectGallery";
 import FeaturedWork from "@/components/FeaturedWork";
+import Experience from "@/components/Experience";
 import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
 
 export default function Home() {
   return (
-    <main className="relative bg-black min-h-screen overflow-hidden">
+    <main className="relative bg-black min-h-screen overflow-x-clip">
       <Background />
       <Navbar />
       <Hero />
       <TechStack />
       <Services />
       <FeaturedWork />
+      <Experience />
       <ProjectGallery />
       <Footer />
     </main>

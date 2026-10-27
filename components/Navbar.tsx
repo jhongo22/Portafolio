@@ -4,10 +4,7 @@ import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MegaMenu from "@/components/ui/mega-menu";
 import type { MegaMenuItem } from "@/components/ui/mega-menu";
-import {
-    Menu,
-    X as CloseIcon
-} from "lucide-react";
+
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -17,7 +14,8 @@ function Navbar() {
         { id: 2, label: "Stack", link: "#stack" },
         { id: 3, label: "Habilidades", link: "#habilidades" },
         { id: 4, label: "Sobre Mí", link: "#sobre-mi" },
-        { id: 5, label: "Proyectos", link: "#proyectos" },
+        { id: 5, label: "Experiencia", link: "#experiencia" },
+        { id: 6, label: "Proyectos", link: "#proyectos" },
     ];
 
     return (

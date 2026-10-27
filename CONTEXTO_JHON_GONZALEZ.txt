@@ -1,49 +1,109 @@
 ================================================================================
-CONTEXTO PROFESIONAL: JHON GONZALEZ - FULL STACK & IA DEVELOPER
+CONTEXTO PROFESIONAL: JHON NEIDER GONZALEZ OSPINA - FULL STACK & IA DEVELOPER
 ================================================================================
+
+DATOS DE CONTACTO Y ENLACES
+---------------------------
+- Nombre Completo: Jhon Neider Gonzalez Ospina
+- Rol: Desarrollador de Software Full Stack & IA
+- Ubicación: Medellín, Antioquia, Colombia
+- Teléfono: (+57) 300 443 5894
+- Email: jhonneider1234567@gmail.com
+- Portafolio Web: https://portafolio-iota-mocha39.vercel.app/
+- LinkedIn: https://www.linkedin.com/in/jhon-gonzalez-3415b2263/
+- GitHub: https://github.com/jhongo22/
 
 PERFIL PROFESIONAL
 ------------------
-Jhon Gonzalez es un Desarrollador Full Stack especializado en la integración de Inteligencia Artificial y Automatizaciones avanzadas. Con base en Medellín, Colombia, cuenta con más de un año de experiencia y un portafolio de más de 10 proyectos exitosos. Su enfoque principal es optimizar y escalar operaciones de negocio mediante soluciones tecnológicas inmersivas y agentes inteligentes.
+Desarrollador apasionado por la creación de soluciones digitales inteligentes que transforman la complejidad operativa en ecosistemas eficientes y escalables. Autodidacta y proactivo, con gran capacidad para adoptar nuevas tecnologías y metodologías de forma autónoma. Su enfoque combina desarrollo técnico riguroso con comunicación clara para resolver requerimientos de alto impacto. Especializado en construir soluciones integrales desde cero, integrando infraestructuras existentes, aplicaciones web de alto rendimiento y automatizaciones avanzadas con agentes de IA.
 
-CORE TECH STACK
----------------
-- Frontend: Next.js, React, Tailwind CSS, TypeScript, Framer Motion.
-- Backend: Node.js, PHP (Laravel), Python (para automatizaciones/IA).
-- Bases de Datos y CMS: Supabase, Postgres (Vector), MySQL, WordPress.
-- IA y Automatización: OpenAI (Embeddings, Vision, RAG), n8n, ElevenLabs (Voz IA), LangChain/Conceptos RAG.
-- Integraciones API: WhatsApp API, Telegram API, Airbnb/Booking/VRBO APIs, Google Drive/Sheets.
-- Otros: SEO avanzado, Analytics, Google Search Console, Render/Vercel/Hostinger para deploy.
+================================================================================
+EXPERIENCIA LABORAL
+================================================================================
 
-ANÁLISIS DE PROYECTOS POR CATEGORÍA
------------------------------------
+1. GARANTÍAS COMUNITARIAS LATINOAMÉRICA
+   Cargo: Desarrollador de Software
+   Periodo: Marzo 2026 - Actualidad
+   Responsabilidades y Logros:
+   - Desarrollo y mantenimiento de módulos empresariales bajo arquitectura Full Stack: Frontend en Angular y Backend en Laravel (PHP).
+   - Diseño e implementación de visualizaciones de datos: gráficas estadísticas, métricas de riesgo, matrices interactivas y dashboards ejecutivos en tiempo real.
+   - Generación de reportes dinámicos en tiempo real con capacidades de exportación multiformato (Excel, PDF, CSV).
+   - Procesamiento robusto de archivos masivos: validación, transformación y limpieza de datos en cargas batch CSV/Excel con manejo de excepciones y transacciones seguras.
+   - Integración de modelos estadísticos y algoritmos en R dentro del backend Laravel para cálculos de riesgo financiero y normativo (SARO, SARLAFT, IRL, Brechas de liquidez).
+   - Diseño e integración de un ecosistema de agentes de IA especializados en marcos de riesgo financiero, automatizando la generación de informes técnicos, análisis de datos y asistencia conversacional.
+   - Mantenimiento y optimización de plataformas web corporativas en WordPress.
+   - Gestión de versiones, integración y colaboración técnica mediante Git y GitHub.
+   - Tecnologías: Angular, TypeScript, Laravel, PHP, R, MySQL, Agentes IA, n8n, WordPress, Git/GitHub.
 
-1. DESARROLLO WEB FULL STACK:
-   - Alquiler de Ecógrafos: Aplicación para gestión de equipos médicos con panel administrativo, calendario de disponibilidad y Supabase.
-   - E-commerce "Toxxic": Tienda de ropa urbana desarrollada en Laravel con gestión integral de pedidos y stock.
-   - Landing Pages Premium: "La Juana de Cerro Tusa" y "Villa Grande", sitios turísticos con integración directa a APIs de Airbnb/Booking para sincronización de reservas.
-   - Hot Cheese: Landing enfocada en comida rápida con selector de sedes e integración directa con WhatsApp.
-   - Telocalizo MX: Catálogo para mayoristas en México optimizado para SEO.
+2. TELOCALIZO
+   Cargo: Desarrollador de Software
+   Periodo: Junio 2025 - Marzo 2026
+   Responsabilidades y Logros:
+   - Planeación, diseño y desarrollo de aplicaciones web y plataformas a medida con HTML, CSS, JavaScript y Next.js / React.
+   - Implementación de estrategias avanzadas de SEO técnico y de contenido para impulsar el posicionamiento orgánico.
+   - Optimización de Core Web Vitals, tiempos de carga y rendimiento de aplicaciones cliente.
+   - Configuración y administración de dominios, zonas DNS y despliegues productivos en servidores VPS en la nube.
+   - Integración y monitoreo de herramientas analíticas y de comportamiento de usuario: Google Analytics, Google Search Console y Microsoft Clarity.
+   - Soporte técnico post-lanzamiento, mantenimiento evolutivo, control de cambios y resolución proactiva de incidentes.
+   - Tecnologías: Next.js, React, JavaScript, HTML5/CSS3, VPS Linux, SEO, Analytics, Search Console, Clarity.
 
-2. IA Y AUTOMATIZACIÓN DE PROCESOS:
-   - Ecosistema IA Medicina Regenerativa: Automatización de CRM (Chatwoot) que procesa texto, audio y comprobantes de pago. Incluye gestión de memoria para mantener contexto de conversaciones.
-   - Agentes de Voz y Texto: Integración de ElevenLabs y OpenAI para atención al cliente 24/7 en sectores médicos (Vive Feliz Sin Dolor).
-   - Automatización de Restaurantes: Agentes multimodales que procesan pedidos por voz, verifican pagos con visión artificial y gestionan el flujo vía Telegram/WhatsApp.
-   - Lead Gen Automático: Sistema que extrae datos (Apify/Firecrawl), cualifica leads con IA y genera prospección personalizada por Instagram y Email.
-   - Generación Digital de Contratos: Flujo automatizado que genera documentos legales y los despacha por canales digitales instantáneamente.
+3. DESARROLLADOR FREELANCE
+   Cargo: Full Stack & AI Developer
+   Periodo: 2024 - 2025
+   Responsabilidades y Logros:
+   - Planeación, desarrollo y despliegue integral de aplicaciones web personalizadas y sitios WordPress orientados a conversión y usabilidad.
+   - Diseño e implementación de chatbots inteligentes impulsados por IA, integrados en redes sociales (WhatsApp, Instagram, Telegram), sitios web, sistemas CRM y bases de datos con arquitecturas RAG propias para clínicas, consultorios médicos, restaurantes y retail.
+   - Automatización de procesos empresariales mediante IA: flujos para procesamiento de facturas, contratos, gestión documental y hojas de cálculo.
+   - Automatización y sincronización de CRM (Chatwoot, etc.) con IA para potenciar la gestión comercial y prospección.
+   - Diseño de embudos y estrategias de marketing digital y lead generation automatizados.
+   - Administración, configuración y hardening de servidores VPS en la nube, garantizando alta disponibilidad.
+   - Tecnologías: Next.js, Node.js, Python, Supabase, n8n, OpenAI APIs, RAG, WordPress, VPS.
 
-3. ARQUITECTURA DE DATOS E INFRAESTRUCTURA:
-   - Sistema RAG Empresarial: Sincronización con Google Drive para crear bases de conocimiento vectorizadas en Postgres (Supabase Vector) para consultas precisas de IA.
-   - Sistema de Backups Cloud: Automatización de copias de seguridad entre múltiples instancias de n8n hacia Google Drive.
+4. CLÍNICA ANTIOQUIA
+   Cargo: Practicante de Sistemas
+   Periodo: 2024 - 2025
+   Responsabilidades y Logros:
+   - Planeación y desarrollo de aplicaciones web institucionales a la medida de los requerimientos hospitalarios.
+   - Implementación de arquitectura Single Sign-On (SSO) unificando múltiples herramientas y desarrollos dispersos en un único portal corporativo.
+   - Gestión de mesa de ayuda y soporte técnico nivel 1 atendiendo oportunamente incidencias de usuarios operativos y administrativos.
+   - Administración de usuarios, accesos, asignación de licencias corporativas, cuentas de correo institucional y políticas de seguridad.
+   - Colaboración activa con el equipo de infraestructura TI en mantenimiento preventivo/correctivo y optimización de flujos operativos.
+   - Tecnologías: Web Apps, SSO, Soporte TI, Directorio Activo, Gestión de Licencias, Redes e Infraestructura.
 
-ESPECIALIZACIONES Y VALOR AGREGADO
-----------------------------------
-- Inteligencia Artificial Multimodal: Capacidad para procesar texto, imágenes (pagos) y voz.
-- RAG (Retrieval-Augmented Generation): Construcción de cerebros digitales para empresas basados en sus propios documentos.
-- Automatización CRM: Integración de flujos de trabajo que eliminan tareas repetitivas y escalan la capacidad de respuesta humana.
-- UX/UI de Alto Impacto: Diseño moderno (Glassmorphism, animaciones fluidas) enfocado en la conversión y la experiencia de usuario premium.
+================================================================================
+EDUCACIÓN Y FORMACIÓN ACADÉMICA
+================================================================================
 
-RESUMEN DE IMPACTO
-------------------
-Jhon combina la robustez del desarrollo web tradicional con la vanguardia de la IA generativa. No solo construye sitios web, sino ecosistemas digitales autónomos que permiten a las empresas operar de forma más eficiente, captar mejores clientes y ofrecer atención premium automatizada.
+- Técnico en Desarrollo de Software | Politécnico de Colombia (2023 - 2025)
+- Bachiller Técnico en Eventos y Turismo | Institución Educativa Olaya Herrera
+
+DIPLOMADOS, CURSOS Y CERTIFICACIONES:
+- Diplomado en Inteligencia Artificial (IA)
+- Curso Especializado: Domina la IA con Gemini
+- Bootcamp: Análisis de Datos
+- Diplomado en Marketing Digital
+
+================================================================================
+HABILIDADES Y COMPETENCIAS TÉCNICAS
+================================================================================
+
+DESARROLLO FULL STACK:
+- Frontend: Next.js, React, Angular, Vue.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3, Bootstrap.
+- Backend: Laravel (PHP), Node.js, Express, Python, REST APIs, Docker, LangChain.
+- Bases de Datos: PostgreSQL, MySQL, SQL Server, Supabase (con pgvector).
+- CMS & E-commerce: WordPress, Shopify.
+- Control de Versiones: Git, GitHub.
+
+AUTOMATIZACIÓN & INTELIGENCIA ARTIFICIAL:
+- Workflows & Orquestación: n8n, Power Automate, Flowise, LangGraph.
+- Agentes de IA: Equipos de agentes, orquestaciones complejas, system prompts, servidores MCP, arquitecturas RAG, Skills, Cron Jobs.
+- Agentes IA Autónomos: OpenClaw, Hermes Agent, Gemini Spark.
+- LLMs & APIs: OpenAI (GPT-4o, Embeddings, Vision), Anthropic (Claude), Google Gemini, modelos open-source y locales.
+- Herramientas de Desarrollo Asistido por IA: Claude Code, Antigravity, Cursor, DeepSeek Harness, OpenCode, Kiro, Cline, Kilo Code, Lovable, GitHub Copilot.
+
+COMPETENCIAS METODOLÓGICAS Y DE GESTIÓN:
+- Análisis de requerimientos y documentación técnica/funcional.
+- Gestión ágil de proyectos (Scrum, Kanban) y control de tiempos.
+- Administración y despliegue en servidores VPS Linux y servicios cloud (Render, Vercel).
+- SEO técnico y analítica web (Search Console, Analytics, Clarity).
 ================================================================================
